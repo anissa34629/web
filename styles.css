@@ -1,0 +1,588 @@
+body {
+  
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color:rgb(196, 153, 224);
+    color: #333;
+    position: relative;
+    min-height: 100vh;
+}
+
+header {
+
+    background-size: cover;
+    background-position: center;
+    background-color: #17d8a8;
+    text-align: center;
+    padding: 1em 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header h1  {
+    opacity: 0;
+    animation: fadeIn 2.2s ease-in-out both;
+}
+
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.profile-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.profile-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.header-content {
+    text-align: left;
+}
+
+nav {
+    background-color: #14a1f3;
+    color: #0a0a0a;
+    text-align:center;
+    padding: 0.05em 0.05em;
+}
+
+nav a {
+    color: #0c0c0c;
+    text-decoration: none;
+    margin: 0 0.5em;
+}
+nav ul li {
+    margin-left: 30px;
+}
+nav ul {
+   list-style-type: none;
+   display: flex;
+
+}
+
+
+section {
+    padding: 2em;
+    
+}
+
+#hobbies {
+    text-align: center;
+    padding: 20px;
+   
+}
+
+.hobby {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin-bottom: 15px; 
+}
+
+.hobby h3 {
+    margin-right: 10px; 
+}
+
+#about-me {
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+}
+
+.about-me-container {
+    display: flex;
+    align-items: center;
+}
+
+.about-me-image {
+    width: 200px; 
+    height: auto;
+    margin-right: auto;
+    
+    
+}
+
+.about-me-text {
+    max-width: 60%;
+    
+
+}
+
+
+
+
+@media screen and (max-width: 600px) {
+    .about-me-container {
+        flex-direction: column;
+        text-align: center;
+        
+    }
+
+    .about-me-image {
+        margin-bottom: 20px;
+    }
+
+    .about-me-text {
+        max-width: 100%;
+    }
+}
+
+
+
+
+.academic-history-section {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.education,
+.certifications {
+    margin-bottom: 20px;
+}
+
+.certifications ul {
+    list-style: none;
+    padding: 0;
+}
+
+.certifications li {
+    margin-bottom: 8px;
+}
+.footer-reveal {
+    transform: translateY(0);
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 0.1em 0;
+    width: 100%;
+    transition: transform 0.5s ease;
+}
+
+.footer-container {
+    background-color: #f0f0f0;
+    text-align: end;
+    padding: 1em;
+    width: 100%;
+}
+
+
+
+.professional-history-section {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.job {
+    margin-bottom: 20px;
+}
+
+.job ul {
+    list-style: none;
+    padding: 0;
+}
+
+.job li {
+    margin-bottom: 8px;
+}
+.job-details {
+    display: none;
+    margin-top: 10px;
+}
+
+.job-details.visible {
+    display: block;
+}
+.testimonials-section {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2em;
+}
+
+.testimonial {
+    margin-bottom: 2em;
+}
+
+blockquote {
+    font-style: normal;
+    color: #0a0a0a;
+}
+
+.testimonial-author {
+    margin-top: 1em;
+    font-weight: bold;
+}
+
+
+.skills-section {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2em;
+}
+
+.skills-section h2 {
+    font-size: 15px;
+}
+.skill {
+    margin-bottom: 2em;
+}
+.dropdown {
+    display: inline-block;
+}
+
+.dropbtn{
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: #f4f4f4;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: #333;
+    padding: 0.5em;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+   
+}
+
+.dropbtn::after{
+    content: '\25BC';
+    font-size: 12px;
+    margin-left: 5px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.forecast-section {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2em;
+}
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+}
+
+
+#forecaster {
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+    text-align: center;
+}
+
+canvas {
+    width: 100%;
+    height: auto;
+}
+
+button {
+    margin: 5px;
+}
+
+#modeButtons {
+    margin-top: 1rem;
+}
+
+button {
+    padding: 0.5rem 1rem;
+    margin: 0 0.5rem;
+    font-size: 1rem;
+}
+
+/* Media Queries for Responsive Design */
+
+@media only screen and (max-width: 600px) {
+    #forecaster {
+        width: 100%;
+        padding: 0 10px; /* Optional: Adjust padding for smaller screens */
+    }
+
+    button {
+        display: block;
+        width: 100%;
+        margin: 5px 0;
+    }
+}
+
+
+
+body, html {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center; 
+}
+
+
+#converter {
+    max-width: 400px; 
+    margin: 2em auto; 
+    padding: 1em;
+    background-color: #f9f9f9; 
+    border-radius: 10px; 
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2); 
+}
+
+#converter h2 {
+    color: #333;
+}
+
+#converter select, 
+#converter input[type="number"] {
+    width: 90%; 
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+#converter button {
+    padding: 10px 20px;
+    background-color: #4CAF50; 
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#converter button:hover {
+    background-color: #45a049; 
+}
+
+#converter #result, 
+#converter #exchangeRate, 
+#converter #lastUpdate, 
+#converter #timestamp, 
+#converter #error {
+    margin-top: 10px;
+    font-size: 1em;
+}
+
+
+
+
+main {
+    padding: 1em;
+    text-align: center;
+}
+
+#contactForm {
+    max-width: 500px;
+    margin: 0 auto; 
+}
+
+#contactForm label,
+#contactForm input[type="text"],
+#contactForm input[type="email"],
+#contactForm textarea {
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+}
+
+#contactForm button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#contactForm button:hover {
+    background-color: #45a049;
+}
+
+
+
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#exchange-rate-info {
+    margin-top: 20px;
+}
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+}
+
+form {
+    width: 80%;
+    max-width: 600px;
+}
+
+label {
+    margin-top: 0.5rem;
+    display: block;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 0.3rem;
+}
+
+button {
+    padding: 0.5rem 1rem;
+    margin-top: 1rem;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+#charCounter {
+    margin-top: 0.5rem;
+    font-size: 0.8rem;
+    color: #555;
+}
+
+
+
+html, body {
+    margin: 0;
+    padding: 0;
+    
+}
+
+
+
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+
+}
+
+
+.container {
+    width: 100%;
+    max-width: 1200px; 
+    margin: 0 auto;
+    padding: 20px;
+}
+
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+@media screen and (max-width: 768px) {
+  
+
+    .hamburger-menu {
+        display: block;
+        
+    }
+
+    nav ul {
+        display: grid; 
+   
+    }
+
+    nav.show ul {
+        display: block; 
+       
+    }
+
+  
+    .container {
+        padding: 10px;
+    }
+
+ 
+   
+}
+
+@media screen and (max-width: 480px) {
+ 
+}
+
+
+

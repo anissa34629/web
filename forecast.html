@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fuel Cost Forecaster</title>
+    <meta name="description" content="Passionate web developer with expertise in ECMAScript, HTML, and CSS. Explore my portfolio for a showcase of technical skills and creative solutions. Contact me for collaborations.">
+    <link rel="stylesheet"  href="styles.css">
+    <!-- Include Chart.js library -->
+   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+<body>
+<header>
+    <div class="profile-image">
+        <img src="images/profile-image.jpeg" alt="profile-image">
+    </div>
+    <div class="header-content">
+        <h1>Anissa Parvaiz</h1>
+        <p>Web Developer</p>
+    </div>
+</header>
+
+<nav>
+    <ul class="container-grid">
+        <li class="nav-item"><a href="index.html">Home</a></li> 
+        <li class="nav-item"><a href="academic.html">Academic History</a></li>
+        <li class="nav-item"><a href="professional.html">Professional History</a></li>
+        <li class="nav-item"><a href="testimonials.html">Testimonials</a></li>
+
+        <!-- Dropdown for Skills -->
+        <li class="nav-item dropdown">
+            <a href="skills.html">Skills</a>
+            <div class="dropdown-content">
+                <a href="forecast.html">Forecast</a>
+                <a href="currency-converter.html">Currency Converter</a>
+            </div>
+        </li>
+
+        <li class="nav-item"><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+
+
+    <div class="container-grid" id="forecaster">
+        <h2>Fuel Cost Forecaster</h2>
+        <div>
+            <canvas id="fuelChart"></canvas>
+        </div>
+        
+        <div class="container-grid" id="modeSwitch">
+        <button id="prev">Previous</button>
+        <button id="next">Next</button>
+        <button id="historicalMode">Historical</button>
+            <button id="forecastMode">Forecast</button>
+         </div>
+        <div id="error"></div>
+    </div>
+    
+    
+
+    <footer id="footer">
+        <p>Contact me at: anissaparvaiz501@gmail.com</p>
+    </footer>
+    <script src="forecast.js"></script>
+</body>
+
+</html>
+
